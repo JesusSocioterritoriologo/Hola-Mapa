@@ -56,7 +56,7 @@ fetch('datos.geojson')
 
   <script>
   // GeoJSON embebido directamente
-  var geojsonData = {
+  var alcaldias.geojson = {
   "type": "FeatureCollection",
   "features": [
     {
@@ -76,7 +76,8 @@ fetch('datos.geojson')
   ]
 }
 ;
-  L.geoJSON(geojsonData).addTo(map);
+  L.geoJSON(alcaldias.geojson).addTo(map);
   </script>
 </body>
 </html>
+
