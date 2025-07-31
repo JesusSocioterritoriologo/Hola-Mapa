@@ -161,3 +161,9 @@ L.control.layers(null, overlayMaps).addTo(map);
       });
   </script>
 </body>
+// Cargar el archivo GeoJSON (debe estar en la misma carpeta o cambiar la ruta)
+  fetch('alcaldias.geojson')
+    .then(response => response.json())
+    .then(data => {
+      alcaldiasLayer.addData(data);
+  });
